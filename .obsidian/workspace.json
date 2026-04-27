@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/agecraft-mobile/run/nodes/run-node-initial-structuring.md",
+                "file": "projects/agecraft-mobile/summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "run-node-initial-structuring"
+              "title": "summary"
             }
           }
         ]
@@ -144,6 +144,7 @@
   },
   "active": "b138dbc09b63f8f3",
   "lastOpenFiles": [
+    "projects/agecraft-mobile/run/nodes/run-node-initial-structuring.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3/tasks/task-implement-crafting-economy-systems.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3/tasks/task-mvp-hardening-and-ship-readiness.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3/tasks/task-build-playable-client.md",
@@ -174,7 +175,6 @@
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v2/index.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v2/decomposition-log.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v2/tasks/task-nft-loyalty-economy.md",
-    "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v2/tasks/task-infinite-item-combination-system.md",
-    "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v2/tasks/task-core-loop-era-progression.md"
+    "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v2/tasks/task-infinite-item-combination-system.md"
   ]
 }
