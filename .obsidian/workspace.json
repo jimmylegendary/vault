@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/agecraft-mobile/snapshots/snapshot-root-v3.md",
+                "file": "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v1/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "snapshot-root-v3"
+              "title": "index"
             }
           }
         ]
@@ -144,9 +144,17 @@
   },
   "active": "b138dbc09b63f8f3",
   "lastOpenFiles": [
+    "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v2/index.md",
+    "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3/index.md",
+    "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v4/index.md",
+    "projects/agecraft-mobile/snapshots/snapshot-root-v4.md",
+    "projects/agecraft-mobile/run/nodes/run-node-playtest-phase-planning.md",
+    "projects/agecraft-mobile/run/nodes/run-node-fun-pacing-pass.md",
+    "projects/agecraft-mobile/run/edges/run-edge-playtest-planning-to-fun-pacing.md",
+    "projects/agecraft-mobile/run/edges/run-edge-hardening-to-playtest-planning.md",
+    "projects/agecraft-mobile/snapshots/snapshot-root-v3.md",
     "projects/agecraft-mobile/snapshots/snapshot-root-v2.md",
     "projects/agecraft-mobile/snapshots/snapshot-root-v1.md",
-    "projects/agecraft-mobile/snapshots/snapshot-root-v3.md",
     "projects/agecraft-mobile/summary.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v4/tasks/task-ship-shareable-playtest-build.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v4/tasks/task-tune-core-fun-and-pacing.md",
@@ -154,7 +162,6 @@
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v4/tasks/task-capture-feedback-and-next-iteration-plan.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v4/tasks",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v4/decomposition-log.md",
-    "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v4/index.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v4",
     "projects/agecraft-mobile/root-v4-spec.json",
     "projects/agecraft-mobile/derived/views/agecraft-playtest-objective.md",
@@ -164,17 +171,10 @@
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3/tasks/task-build-playable-client.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3/tasks/task-balance-and-content-pass.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3/tasks",
-    "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3/index.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3/decomposition-log.md",
     "projects/agecraft-mobile/task-groups/tg-root/versions/tgv-root-v3",
     "projects/agecraft-mobile/run/nodes/run-node-hardening-and-ship.md",
     "projects/agecraft-mobile/run/nodes/run-node-economy-implementation.md",
-    "projects/agecraft-mobile/run/nodes/run-node-design-pass.md",
-    "projects/agecraft-mobile/run/nodes/run-node-content-balance-pass.md",
-    "projects/agecraft-mobile/run/nodes/run-node-client-implementation.md",
-    "projects/agecraft-mobile/run/edges/run-edge-content-to-hardening.md",
-    "projects/agecraft-mobile/run/edges/run-edge-economy-to-content-balance.md",
-    "projects/agecraft-mobile/run/edges/run-edge-design-to-client-implementation.md",
     "projects/agecraft-mobile/run/edges",
     "projects/agecraft-mobile/root-v3-spec.json",
     "projects/agecraft-mobile/derived/views",
