@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "enabled": false,
+  "language": "ko",
+  "repoUrl": null,
+  "branch": "main",
+  "debounceMs": 5000,
+  "commitMessage": "TaskOps auto-sync",
+  "ignorePaths": [
+    ".git/",
+    ".obsidian/workspace",
+    ".obsidian/workspace-mobile"
+  ]
+}

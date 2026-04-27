@@ -1,0 +1,153 @@
+{
+  "main": {
+    "id": "26a9cc8f2f0f3af5",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a668753dde9c3df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b138dbc09b63f8f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/taskops-test/run/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6549939b5bb652da",
+    "type": "split",
+    "children": [
+      {
+        "id": "f83efa33f2c38a54",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a72e5eafc26db68a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "711bc2954435a466",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b98ac8faf02da81c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c026ce174ee71b47",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "52afabe991b9bcd9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "projects/taskops-test/run/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "index 의 백링크"
+            }
+          },
+          {
+            "id": "53123ebded08404f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "2edf6d4b9cd13bc7",
+            "type": "leaf",
+            "state": {
+              "type": "graph-task-explorer",
+              "state": {},
+              "icon": "folder-tree",
+              "title": "TaskOps Explorer"
+            }
+          },
+          {
+            "id": "c1b1bda49413aff0",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "bases:새 베이스 생성하기": false,
+      "taskops-obsidian:Open TaskOps Explorer": false,
+      "obsidian42-brat:BRAT": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "c1b1bda49413aff0",
+  "lastOpenFiles": [
+    "projects/taskops-test/task-groups/tg-design/versions/tgv-design-v1/tasks/task-verify-example.md",
+    "projects/taskops-test/task-groups/tg-design/versions/tgv-design-v1/tasks/task-model.md",
+    "projects/taskops-test/task-groups/tg-design/index.md",
+    "projects/taskops-test/task-groups/tg-root/index.md",
+    "projects/taskops-test/snapshots/snapshot-alpha-v1.md"
+  ]
+}
