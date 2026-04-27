@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "enabled": false,
+  "enabled": true,
   "language": "ko",
-  "repoUrl": null,
+  "repoUrl": "git@github.com:jimmylegendary/vault.git",
   "branch": "main",
   "debounceMs": 5000,
   "commitMessage": "TaskOps auto-sync",

@@ -1,0 +1,40 @@
+{
+  "versionId": "tgv-root-v4",
+  "version": "v4",
+  "summary": "외부 플레이테스트 준비 pre-alpha objective",
+  "selected": true,
+  "tasks": [
+    {
+      "id": "task-tune-core-fun-and-pacing",
+      "title": "핵심 재미 루프와 pacing 튜닝",
+      "objective": "3개 시대를 반복 플레이했을 때 gather, craft, bottleneck, market decision의 리듬이 더 자연스럽게 느껴지도록 밸런스를 다듬는다.",
+      "responsibility": "게임성, 반복 리듬, progression tuning",
+      "completionCriteria": "manual play와 smoke 기준에서 era progression이 지나치게 trivial하거나 grindy하지 않고 craft-vs-buy 선택이 더 의미 있게 느껴진다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-improve-mobile-onboarding-and-feedback",
+      "title": "모바일 onboarding과 feedback 강화",
+      "objective": "처음 보는 플레이어도 현재 목표, 필요한 자원, 좋은 아이템의 의미를 빠르게 이해하도록 UX를 개선한다.",
+      "responsibility": "모바일 UX clarity와 feedback polish",
+      "completionCriteria": "첫 1분 onboarding, current goal clarity, item inspection feedback가 개선되고 README에도 반영된다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-ship-shareable-playtest-build",
+      "title": "공유 가능한 web playtest build 배포",
+      "objective": "외부 테스터에게 링크로 바로 전달할 수 있는 web build를 만들고 실행/배포 절차를 정리한다.",
+      "responsibility": "배포와 playtest access path 준비",
+      "completionCriteria": "public 또는 controlled-access playtest URL이 생기고 재현 가능한 deploy steps가 정리된다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-capture-feedback-and-next-iteration-plan",
+      "title": "피드백 수집 구조와 다음 iteration plan 정의",
+      "objective": "테스터 피드백을 받을 질문 구조와 다음 product iteration 기준을 만든다.",
+      "responsibility": "feedback loop와 next-phase decision framing",
+      "completionCriteria": "playtest 후 무엇을 관찰하고 어떤 신호로 다음 단계를 정할지 문서화된다.",
+      "status": "pending"
+    }
+  ]
+}
