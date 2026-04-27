@@ -9,14 +9,14 @@
 - Task group versions: 4
 - Tasks: 12
 - Snapshots: 4
-- Run nodes: 10
-- Run edges: 9
+- Run nodes: 11
+- Run edges: 10
 
 ## Task status counts
-- pending: 1
+- pending: 0
 - active: 0
 - done: 11
-- blocked: 0
+- blocked: 1
 - cancelled: 0
 
 ## Task groups
@@ -35,7 +35,7 @@
   - version tgv-root-v4 [selected]: 외부 플레이테스트 준비 pre-alpha objective
     - task task-tune-core-fun-and-pacing [done]: 핵심 재미 루프와 pacing 튜닝
     - task task-improve-mobile-onboarding-and-feedback [done]: 모바일 onboarding과 feedback 강화
-    - task task-ship-shareable-playtest-build [pending]: 공유 가능한 web playtest build 배포
+    - task task-ship-shareable-playtest-build [blocked]: 공유 가능한 web playtest build 배포
     - task task-capture-feedback-and-next-iteration-plan [done]: 피드백 수집 구조와 다음 iteration plan 정의
 
 ## Selected version
@@ -51,6 +51,7 @@
 - node run-node-hardening-and-ship [done] type=implementation sourceTask=task-mvp-hardening-and-ship-readiness
 - node run-node-initial-structuring [done] type=planning
 - node run-node-onboarding-feedback-pass [done] type=implementation sourceTask=task-improve-mobile-onboarding-and-feedback
+- node run-node-playtest-deploy-blocker [blocked] type=planning sourceTask=task-ship-shareable-playtest-build
 - node run-node-playtest-phase-planning [done] type=planning
 
 ## Run edges
@@ -58,6 +59,7 @@
 - edge run-edge-content-to-hardening: run-node-content-balance-pass -follows-> run-node-hardening-and-ship
 - edge run-edge-design-to-client-implementation: run-node-design-pass -follows-> run-node-client-implementation
 - edge run-edge-economy-to-content-balance: run-node-economy-implementation -follows-> run-node-content-balance-pass
+- edge run-edge-feedback-plan-to-deploy-blocker: run-node-feedback-plan -blocks-> run-node-playtest-deploy-blocker
 - edge run-edge-fun-pacing-to-onboarding-feedback: run-node-fun-pacing-pass -follows-> run-node-onboarding-feedback-pass
 - edge run-edge-hardening-to-playtest-planning: run-node-hardening-and-ship -follows-> run-node-playtest-phase-planning
 - edge run-edge-onboarding-to-feedback-plan: run-node-onboarding-feedback-pass -follows-> run-node-feedback-plan
