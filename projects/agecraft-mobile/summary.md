@@ -9,13 +9,13 @@
 - Task group versions: 4
 - Tasks: 12
 - Snapshots: 4
-- Run nodes: 8
-- Run edges: 7
+- Run nodes: 9
+- Run edges: 8
 
 ## Task status counts
-- pending: 3
+- pending: 2
 - active: 1
-- done: 8
+- done: 9
 - blocked: 0
 - cancelled: 0
 
@@ -33,8 +33,8 @@
     - task task-balance-and-content-pass [done]: 3개 시대 콘텐츠와 밸런스 패스 진행
     - task task-mvp-hardening-and-ship-readiness [done]: MVP 검증, 하드닝, 출시 준비
   - version tgv-root-v4 [selected]: 외부 플레이테스트 준비 pre-alpha objective
-    - task task-tune-core-fun-and-pacing [active]: 핵심 재미 루프와 pacing 튜닝
-    - task task-improve-mobile-onboarding-and-feedback [pending]: 모바일 onboarding과 feedback 강화
+    - task task-tune-core-fun-and-pacing [done]: 핵심 재미 루프와 pacing 튜닝
+    - task task-improve-mobile-onboarding-and-feedback [active]: 모바일 onboarding과 feedback 강화
     - task task-ship-shareable-playtest-build [pending]: 공유 가능한 web playtest build 배포
     - task task-capture-feedback-and-next-iteration-plan [pending]: 피드백 수집 구조와 다음 iteration plan 정의
 
@@ -46,9 +46,10 @@
 - node run-node-content-balance-pass [done] type=implementation sourceTask=task-balance-and-content-pass
 - node run-node-design-pass [done] type=design
 - node run-node-economy-implementation [done] type=implementation sourceTask=task-implement-crafting-economy-systems
-- node run-node-fun-pacing-pass [active] type=implementation sourceTask=task-tune-core-fun-and-pacing
+- node run-node-fun-pacing-pass [done] type=implementation sourceTask=task-tune-core-fun-and-pacing
 - node run-node-hardening-and-ship [done] type=implementation sourceTask=task-mvp-hardening-and-ship-readiness
 - node run-node-initial-structuring [done] type=planning
+- node run-node-onboarding-feedback-pass [active] type=implementation sourceTask=task-improve-mobile-onboarding-and-feedback
 - node run-node-playtest-phase-planning [done] type=planning
 
 ## Run edges
@@ -56,6 +57,7 @@
 - edge run-edge-content-to-hardening: run-node-content-balance-pass -follows-> run-node-hardening-and-ship
 - edge run-edge-design-to-client-implementation: run-node-design-pass -follows-> run-node-client-implementation
 - edge run-edge-economy-to-content-balance: run-node-economy-implementation -follows-> run-node-content-balance-pass
+- edge run-edge-fun-pacing-to-onboarding-feedback: run-node-fun-pacing-pass -follows-> run-node-onboarding-feedback-pass
 - edge run-edge-hardening-to-playtest-planning: run-node-hardening-and-ship -follows-> run-node-playtest-phase-planning
 - edge run-edge-playtest-planning-to-fun-pacing: run-node-playtest-phase-planning -follows-> run-node-fun-pacing-pass
 - edge run-edge-structuring-to-design: run-node-initial-structuring -follows-> run-node-design-pass
