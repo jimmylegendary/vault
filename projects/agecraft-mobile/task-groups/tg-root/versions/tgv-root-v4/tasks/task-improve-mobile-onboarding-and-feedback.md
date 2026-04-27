@@ -10,6 +10,8 @@ responsibility: 모바일 UX clarity와 feedback polish
 completionCriteria: 첫 1분 onboarding, current goal clarity, item inspection feedback가 개선되고 README에도 반영된다.
 order: 2
 createdAt: 2026-04-27T18:56:38.204Z
-status: pending
+status: active
 ---
 # 모바일 onboarding과 feedback 강화
+
+- Next focus: make the first minute clearer for an outside tester and improve goal/item feedback on mobile.

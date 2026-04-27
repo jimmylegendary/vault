@@ -10,9 +10,10 @@ responsibility: 게임성, 반복 리듬, progression tuning
 completionCriteria: manual play와 smoke 기준에서 era progression이 지나치게 trivial하거나 grindy하지 않고 craft-vs-buy 선택이 더 의미 있게 느껴진다.
 order: 1
 createdAt: 2026-04-27T18:56:38.204Z
-status: active
+status: done
 ---
 # 핵심 재미 루프와 pacing 튜닝
 
-- Current focus for the next playtest phase.
-- Goal: make the 3-era run feel less grindy and more decisional under real manual play.
+- Added focused gathering, faster shell drip, and bottleneck-aware crafting bonuses.
+- Verified the market-only smoke path improved from Stone/Bronze/Classical 23/46/51 gathers to 18/41/41 gathers.
+- Verification: `npm run smoke` and `npm run build` succeeded.
