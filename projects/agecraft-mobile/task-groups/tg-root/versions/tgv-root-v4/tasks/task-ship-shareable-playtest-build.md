@@ -14,5 +14,5 @@ status: blocked
 ---
 # 공유 가능한 web playtest build 배포
 
-- Blocked on deployment choice because this step changes external visibility/access.
-- Need one decision: public GitHub Pages / Vercel preview / another target.
+- Deploy target chosen: Vercel.
+- Currently blocked on Vercel device authentication in the CLI.
