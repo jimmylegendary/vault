@@ -1,0 +1,40 @@
+{
+  "versionId": "tgv-root-v3",
+  "version": "v3",
+  "summary": "설계 완료 후 구현 중심 execution plan",
+  "selected": true,
+  "tasks": [
+    {
+      "id": "task-build-playable-client",
+      "title": "플레이 가능한 모바일 클라이언트 구축",
+      "objective": "AgeCraft의 핵심 탐색-조합-진행 루프를 터치 중심 2D 클라이언트로 구현한다.",
+      "responsibility": "Phaser 기반 플레이어 경험과 핵심 화면 구현",
+      "completionCriteria": "Stone→Bronze progression이 실제로 플레이 가능하고 gather, craft, inventory, bottleneck UI가 동작한다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-implement-crafting-economy-systems",
+      "title": "조합 생성기와 경제 시스템 구현",
+      "objective": "무한 조합 규칙, lineage, rarity, market purchase, loyalty 적립 흐름을 작동하는 시스템으로 만든다.",
+      "responsibility": "게임 규칙과 데이터 시스템 구현",
+      "completionCriteria": "craft resolver, market purchase, creator attribution, loyalty accumulation이 플레이 루프에 연결된다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-balance-and-content-pass",
+      "title": "3개 시대 콘텐츠와 밸런스 패스 진행",
+      "objective": "Stone, Bronze, Classical 3개 시대의 bottleneck과 아이템 풀을 플레이 가능한 수준으로 채운다.",
+      "responsibility": "콘텐츠 제작과 진행 난이도 조정",
+      "completionCriteria": "3개 시대가 각기 다른 bottleneck을 가지며 1회 플레이에서 진척과 희소 아이템 가치가 느껴진다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-mvp-hardening-and-ship-readiness",
+      "title": "MVP 검증, 하드닝, 출시 준비",
+      "objective": "플레이어가 처음부터 다음 시대로 넘어가는 전체 루프를 무리 없이 경험하도록 다듬고 배포 가능한 상태로 만든다.",
+      "responsibility": "QA, tuning, packaging, ship checklist 완료",
+      "completionCriteria": "새 플레이어 기준 end-to-end 루프가 끊기지 않고 실행되며 실행/배포 방법이 문서화된다.",
+      "status": "pending"
+    }
+  ]
+}

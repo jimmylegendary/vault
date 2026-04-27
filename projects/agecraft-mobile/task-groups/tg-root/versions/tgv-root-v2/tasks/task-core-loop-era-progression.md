@@ -10,6 +10,9 @@ responsibility: 재미와 진척감이 생기는 기본 게임 구조 설계
 completionCriteria: 한 세션의 플레이 흐름, 시대 진입 조건, 막히는 지점과 돌파 방식이 문서로 명확히 정의된다.
 order: 1
 createdAt: 2026-04-27T17:57:25.983Z
-status: pending
+status: done
 ---
 # 핵심 플레이 루프와 시대 진화 구조 정의
+
+- Outcome doc: `derived/views/agecraft-core-loop.md`
+- Defined the session loop, era ladder, bottleneck model, and craft-vs-market breakthrough path.
