@@ -10,6 +10,8 @@ responsibility: 입력 반응 UX 강화
 completionCriteria: 핵심 interaction마다 즉시 보이는 반응 효과가 생기고 실제 플레이에서 입력 인지가 쉬워진다.
 order: 1
 createdAt: 2026-04-28T02:56:05.271Z
-status: pending
+status: active
 ---
 # interaction feedback 효과 추가
+
+- Current focus for the new feedback-effects pass.
