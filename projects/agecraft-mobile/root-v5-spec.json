@@ -1,0 +1,24 @@
+{
+  "versionId": "tgv-root-v5",
+  "version": "v5",
+  "summary": "한글화 및 재배포 objective",
+  "selected": true,
+  "tasks": [
+    {
+      "id": "task-localize-player-facing-copy-ko",
+      "title": "플레이어 노출 문구 한글화",
+      "objective": "현재 3-era pre-alpha의 플레이어 노출 문구를 Korean-first로 바꿔 첫 플레이 경험의 언어 마찰을 줄인다.",
+      "responsibility": "모바일 UI, gate feedback, market/onboarding copy의 한국어화",
+      "completionCriteria": "핵심 플레이 루프를 진행하는 데 필요한 플레이어 노출 문구가 한국어 기준으로 읽히고 smoke/build가 유지된다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-redeploy-korean-playtest-build",
+      "title": "한글화 빌드 재배포 및 공유 상태 갱신",
+      "objective": "한글화된 build를 Vercel에 다시 올리고 repo/vault/report 상태를 최신화한다.",
+      "responsibility": "배포, 기록 반영, 공유 링크 갱신",
+      "completionCriteria": "Vercel 재배포 성공, GitHub push 완료, TaskOps/vault 반영 완료, 결과 보고 완료.",
+      "status": "pending"
+    }
+  ]
+}
