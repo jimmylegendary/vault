@@ -14,8 +14,8 @@
 
 ## Task status counts
 - pending: 0
-- active: 1
-- done: 17
+- active: 0
+- done: 18
 - blocked: 0
 - cancelled: 0
 
@@ -44,7 +44,7 @@
     - task task-fix-mobile-interaction-blocker [done]: 모바일 interaction blocker 수정
     - task task-reverify-and-redeploy-interaction-fix [done]: interaction 수정 재검증 및 재배포
   - version tgv-root-v7 [selected]: interaction feedback 강화 objective
-    - task task-add-interaction-feedback-effects [active]: interaction feedback 효과 추가
+    - task task-add-interaction-feedback-effects [done]: interaction feedback 효과 추가
     - task task-reverify-redeploy-feedback-effects [done]: feedback 효과 재검증 및 재배포
 
 ## Selected version
