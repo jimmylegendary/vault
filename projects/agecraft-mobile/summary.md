@@ -1,26 +1,26 @@
 # AgeCraft
 
 - Project ID: agecraft-mobile
-- Project objective: 현재 AgeCraft pre-alpha를 Korean-first playtest build로 한글화하고 다시 배포한다
+- Project objective: 모바일 interaction blocker를 수정해서 실제로 플레이 가능한 Korean-first build로 복구하고 다시 배포한다
 - Project status: done
 - Root task group: tg-root
-- Active snapshot: snapshot-root-v5
+- Active snapshot: snapshot-root-v6
 - Task groups: 1
-- Task group versions: 5
-- Tasks: 14
-- Snapshots: 5
-- Run nodes: 14
-- Run edges: 13
+- Task group versions: 6
+- Tasks: 16
+- Snapshots: 6
+- Run nodes: 16
+- Run edges: 15
 
 ## Task status counts
 - pending: 0
 - active: 0
-- done: 14
+- done: 16
 - blocked: 0
 - cancelled: 0
 
 ## Task groups
-- tg-root — objective: 현재 AgeCraft pre-alpha를 Korean-first playtest build로 한글화하고 다시 배포한다
+- tg-root — objective: 모바일 interaction blocker를 수정해서 실제로 플레이 가능한 Korean-first build로 복구하고 다시 배포한다
   - version tgv-root-v1: 초기 루트 분해
   - version tgv-root-v2: 2D 모바일 MVP를 위한 1차 구조 분해
     - task task-core-loop-era-progression [done]: 핵심 플레이 루프와 시대 진화 구조 정의
@@ -37,12 +37,15 @@
     - task task-improve-mobile-onboarding-and-feedback [done]: 모바일 onboarding과 feedback 강화
     - task task-ship-shareable-playtest-build [done]: 공유 가능한 web playtest build 배포
     - task task-capture-feedback-and-next-iteration-plan [done]: 피드백 수집 구조와 다음 iteration plan 정의
-  - version tgv-root-v5 [selected]: 한글화 및 재배포 objective
+  - version tgv-root-v5: 한글화 및 재배포 objective
     - task task-localize-player-facing-copy-ko [done]: 플레이어 노출 문구 한글화
     - task task-redeploy-korean-playtest-build [done]: 한글화 빌드 재배포 및 공유 상태 갱신
+  - version tgv-root-v6 [selected]: 모바일 interaction blocker 수정 objective
+    - task task-fix-mobile-interaction-blocker [done]: 모바일 interaction blocker 수정
+    - task task-reverify-and-redeploy-interaction-fix [done]: interaction 수정 재검증 및 재배포
 
 ## Selected version
-- tg-root -> tgv-root-v5
+- tg-root -> tgv-root-v6
 
 ## Run nodes
 - node run-node-client-implementation [done] type=implementation sourceTask=task-build-playable-client
@@ -53,6 +56,8 @@
 - node run-node-fun-pacing-pass [done] type=implementation sourceTask=task-tune-core-fun-and-pacing
 - node run-node-hardening-and-ship [done] type=implementation sourceTask=task-mvp-hardening-and-ship-readiness
 - node run-node-initial-structuring [done] type=planning
+- node run-node-interaction-debug [done] type=implementation sourceTask=task-fix-mobile-interaction-blocker
+- node run-node-interaction-redeploy [done] type=implementation sourceTask=task-reverify-and-redeploy-interaction-fix
 - node run-node-korean-localization-pass [done] type=implementation sourceTask=task-localize-player-facing-copy-ko
 - node run-node-korean-localization-planning [done] type=planning
 - node run-node-korean-redeploy [done] type=implementation sourceTask=task-redeploy-korean-playtest-build
@@ -68,8 +73,10 @@
 - edge run-edge-feedback-plan-to-deploy-blocker: run-node-feedback-plan -blocks-> run-node-playtest-deploy-blocker
 - edge run-edge-fun-pacing-to-onboarding-feedback: run-node-fun-pacing-pass -follows-> run-node-onboarding-feedback-pass
 - edge run-edge-hardening-to-playtest-planning: run-node-hardening-and-ship -follows-> run-node-playtest-phase-planning
+- edge run-edge-interaction-debug-to-redeploy: run-node-interaction-debug -follows-> run-node-interaction-redeploy
 - edge run-edge-korean-localization-to-redeploy: run-node-korean-localization-pass -follows-> run-node-korean-redeploy
 - edge run-edge-korean-planning-to-localization-pass: run-node-korean-localization-planning -follows-> run-node-korean-localization-pass
+- edge run-edge-korean-redeploy-to-interaction-debug: run-node-korean-redeploy -follows-> run-node-interaction-debug
 - edge run-edge-onboarding-to-feedback-plan: run-node-onboarding-feedback-pass -follows-> run-node-feedback-plan
 - edge run-edge-playtest-complete-to-korean-planning: run-node-playtest-deploy-blocker -follows-> run-node-korean-localization-planning
 - edge run-edge-playtest-planning-to-fun-pacing: run-node-playtest-phase-planning -follows-> run-node-fun-pacing-pass
