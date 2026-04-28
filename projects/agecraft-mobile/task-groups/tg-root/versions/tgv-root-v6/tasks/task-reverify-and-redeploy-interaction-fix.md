@@ -10,8 +10,11 @@ responsibility: 검증, 배포, vault/report 갱신
 completionCriteria: 상호작용 수정이 확인되고 GitHub/Vercel/vault가 모두 최신 상태로 갱신된다.
 order: 2
 createdAt: 2026-04-28T02:25:58.542Z
-status: active
+status: done
 ---
 # interaction 수정 재검증 및 재배포
 
-- Next focus: app repo push, Vercel redeploy, live interaction sanity check, vault/report refresh.
+- app repo push 완료.
+- Vercel production redeploy 완료.
+- Live Playwright sanity check로 gather interaction 동작 확인 완료.
+- vault/report 상태 갱신 완료.

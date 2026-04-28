@@ -8,6 +8,6 @@ language: ko
 activeRootTaskGroupId: tg-root
 activeSnapshotId: snapshot-root-v6
 createdAt: 2026-04-27T17:57:05.814Z
-status: active
+status: done
 ---
 # AgeCraft
