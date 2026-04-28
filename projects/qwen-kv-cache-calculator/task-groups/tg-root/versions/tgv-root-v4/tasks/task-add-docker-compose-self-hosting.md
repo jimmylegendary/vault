@@ -10,6 +10,8 @@ responsibility: container packaging과 runtime 구성 제공
 completionCriteria: Dockerfile, compose, web server config가 정리되고 실제로 올라가는지 검증된다.
 order: 1
 createdAt: 2026-04-28T04:12:18.000Z
-status: pending
+status: active
 ---
 # docker compose self-hosting 구성 추가
+
+- Current focus for the self-hosting packaging pass.
