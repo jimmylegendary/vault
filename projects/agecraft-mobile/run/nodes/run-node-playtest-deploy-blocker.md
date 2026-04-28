@@ -4,14 +4,14 @@ entityType: runNode
 id: run-node-playtest-deploy-blocker
 runId: run-main
 type: planning
-title: Vercel 인증 대기
-objective: Vercel CLI device authentication을 완료해 shareable playtest deploy를 진행한다
-status: blocked
+title: Vercel production deploy 완료
+objective: shareable playtest build를 Vercel production에 올리고 live URL을 확보한다
+status: done
 sourceTaskId: task-ship-shareable-playtest-build
 sourceTaskGroupVersionId: tgv-root-v4
 createdAt: 2026-04-27T19:18:00.000Z
 ---
-# Vercel 인증 대기
+# Vercel production deploy 완료
 
-- deploy target은 Vercel로 결정됐다.
-- 현재 CLI device authentication 완료가 필요하다.
+- Vercel production deploy를 완료했다.
+- Live URL: `https://agecraft-mobile-app.vercel.app`

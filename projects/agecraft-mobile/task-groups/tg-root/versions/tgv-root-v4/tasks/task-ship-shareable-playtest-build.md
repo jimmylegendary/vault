@@ -10,9 +10,10 @@ responsibility: 배포와 playtest access path 준비
 completionCriteria: public 또는 controlled-access playtest URL이 생기고 재현 가능한 deploy steps가 정리된다.
 order: 3
 createdAt: 2026-04-27T18:56:38.204Z
-status: blocked
+status: done
 ---
 # 공유 가능한 web playtest build 배포
 
-- Deploy target chosen: Vercel.
-- Currently blocked on Vercel device authentication in the CLI.
+- Deployed to Vercel production.
+- Shareable URL: `https://agecraft-mobile-app.vercel.app`
+- GitHub repo updated after deployment-related changes.
