@@ -15,5 +15,6 @@ status: done
 # 확장 계산기 재검증 및 재배포
 
 - App repo push 완료.
+- GitHub repo renamed to `https://github.com/jimmylegendary/kv-cache-calculator`
 - Vercel redeploy 완료: `https://qwen-kv-cache-calculator-app.vercel.app`
 - Local/live Playwright verification 완료.
