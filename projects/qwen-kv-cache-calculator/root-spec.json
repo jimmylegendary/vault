@@ -1,0 +1,32 @@
+{
+  "versionId": "tgv-root-v2",
+  "version": "v2",
+  "summary": "Qwen3.5-27B KV cache research, calculator, and deploy plan",
+  "selected": true,
+  "tasks": [
+    {
+      "id": "task-research-model-spec-and-derive-kv-math",
+      "title": "모델 스펙 확인 및 KV cache 계산식 도출",
+      "objective": "Qwen3.5-27B의 실제 config를 확인하고 1M token, batch 1 기준 KV cache 계산식을 근거와 함께 도출한다.",
+      "responsibility": "모델 아키텍처 확인과 수식 정리",
+      "completionCriteria": "사용한 스펙 값과 수식, 단위 변환, A100 관점 해석까지 문서로 명확히 정리된다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-build-interactive-kv-calculator-webpage",
+      "title": "실시간 KV cache 계산 웹페이지 구현",
+      "objective": "모델 파라미터를 바꾸면 KV cache 추정치를 즉시 다시 계산하는 웹페이지를 만든다.",
+      "responsibility": "계산기 UI와 계산 로직 구현",
+      "completionCriteria": "사용자가 레이어 수, KV heads, head dim, dtype bytes, sequence length, batch size 등을 조절해 결과를 실시간으로 볼 수 있다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-verify-deploy-and-report",
+      "title": "검증, 배포, 보고",
+      "objective": "계산 결과와 웹페이지를 검증한 뒤 배포하고 결과를 정리한다.",
+      "responsibility": "로컬 검증, Vercel 배포, repo/vault/report 갱신",
+      "completionCriteria": "계산 근거와 live URL을 함께 전달할 수 있고 GitHub/Vercel/vault가 최신 상태가 된다.",
+      "status": "pending"
+    }
+  ]
+}
