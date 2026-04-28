@@ -10,6 +10,8 @@ responsibility: 모바일 UI, gate feedback, market/onboarding copy의 한국어
 completionCriteria: 핵심 플레이 루프를 진행하는 데 필요한 플레이어 노출 문구가 한국어 기준으로 읽히고 smoke/build가 유지된다.
 order: 1
 createdAt: 2026-04-28T02:02:21.167Z
-status: pending
+status: active
 ---
 # 플레이어 노출 문구 한글화
+
+- Current focus for the new Korean-first pass.
