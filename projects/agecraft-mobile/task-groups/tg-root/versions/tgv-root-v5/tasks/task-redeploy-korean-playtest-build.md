@@ -10,8 +10,10 @@ responsibility: 배포, 기록 반영, 공유 링크 갱신
 completionCriteria: Vercel 재배포 성공, GitHub push 완료, TaskOps/vault 반영 완료, 결과 보고 완료.
 order: 2
 createdAt: 2026-04-28T02:02:21.167Z
-status: active
+status: done
 ---
 # 한글화 빌드 재배포 및 공유 상태 갱신
 
-- Next focus: GitHub push, Vercel redeploy, vault/report refresh.
+- GitHub push 완료.
+- Vercel 재배포 완료: `https://agecraft-mobile-app.vercel.app`
+- vault/report 상태 갱신 완료.
