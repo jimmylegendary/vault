@@ -9,8 +9,8 @@
 - Task group versions: 3
 - Tasks: 5
 - Snapshots: 3
-- Run nodes: 6
-- Run edges: 5
+- Run nodes: 7
+- Run edges: 6
 
 ## Task status counts
 - pending: 0
@@ -36,12 +36,14 @@
 ## Run nodes
 - node run-node-calculator-implementation [done] type=implementation sourceTask=task-build-interactive-kv-calculator-webpage
 - node run-node-deploy-and-report [done] type=implementation sourceTask=task-verify-deploy-and-report
+- node run-node-repo-rename [done] type=operations sourceTask=task-reverify-and-redeploy-extended-calculator
 - node run-node-research-and-math [done] type=research sourceTask=task-research-model-spec-and-derive-kv-math
 - node run-node-topology-extension-pass [done] type=implementation sourceTask=task-extend-calculator-for-system-topology
 - node run-node-topology-extension-planning [done] type=planning
 - node run-node-topology-redeploy [done] type=implementation sourceTask=task-reverify-and-redeploy-extended-calculator
 
 ## Run edges
+- edge run-edge-deploy-to-repo-rename: run-node-topology-redeploy -follows-> run-node-repo-rename
 - edge run-edge-implementation-to-deploy: run-node-calculator-implementation -follows-> run-node-deploy-and-report
 - edge run-edge-research-to-implementation: run-node-research-and-math -follows-> run-node-calculator-implementation
 - edge run-edge-v2-complete-to-v3-planning: run-node-deploy-and-report -follows-> run-node-topology-extension-planning
