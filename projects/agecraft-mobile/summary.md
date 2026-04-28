@@ -2,20 +2,20 @@
 
 - Project ID: agecraft-mobile
 - Project objective: 현재 AgeCraft pre-alpha를 Korean-first playtest build로 한글화하고 다시 배포한다
-- Project status: active
+- Project status: done
 - Root task group: tg-root
 - Active snapshot: snapshot-root-v5
 - Task groups: 1
 - Task group versions: 5
 - Tasks: 14
 - Snapshots: 5
-- Run nodes: 13
-- Run edges: 12
+- Run nodes: 14
+- Run edges: 13
 
 ## Task status counts
-- pending: 1
-- active: 1
-- done: 12
+- pending: 0
+- active: 0
+- done: 14
 - blocked: 0
 - cancelled: 0
 
@@ -38,8 +38,8 @@
     - task task-ship-shareable-playtest-build [done]: 공유 가능한 web playtest build 배포
     - task task-capture-feedback-and-next-iteration-plan [done]: 피드백 수집 구조와 다음 iteration plan 정의
   - version tgv-root-v5 [selected]: 한글화 및 재배포 objective
-    - task task-localize-player-facing-copy-ko [active]: 플레이어 노출 문구 한글화
-    - task task-redeploy-korean-playtest-build [pending]: 한글화 빌드 재배포 및 공유 상태 갱신
+    - task task-localize-player-facing-copy-ko [done]: 플레이어 노출 문구 한글화
+    - task task-redeploy-korean-playtest-build [done]: 한글화 빌드 재배포 및 공유 상태 갱신
 
 ## Selected version
 - tg-root -> tgv-root-v5
@@ -53,8 +53,9 @@
 - node run-node-fun-pacing-pass [done] type=implementation sourceTask=task-tune-core-fun-and-pacing
 - node run-node-hardening-and-ship [done] type=implementation sourceTask=task-mvp-hardening-and-ship-readiness
 - node run-node-initial-structuring [done] type=planning
-- node run-node-korean-localization-pass [active] type=implementation sourceTask=task-localize-player-facing-copy-ko
+- node run-node-korean-localization-pass [done] type=implementation sourceTask=task-localize-player-facing-copy-ko
 - node run-node-korean-localization-planning [done] type=planning
+- node run-node-korean-redeploy [done] type=implementation sourceTask=task-redeploy-korean-playtest-build
 - node run-node-onboarding-feedback-pass [done] type=implementation sourceTask=task-improve-mobile-onboarding-and-feedback
 - node run-node-playtest-deploy-blocker [done] type=planning sourceTask=task-ship-shareable-playtest-build
 - node run-node-playtest-phase-planning [done] type=planning
@@ -67,6 +68,7 @@
 - edge run-edge-feedback-plan-to-deploy-blocker: run-node-feedback-plan -blocks-> run-node-playtest-deploy-blocker
 - edge run-edge-fun-pacing-to-onboarding-feedback: run-node-fun-pacing-pass -follows-> run-node-onboarding-feedback-pass
 - edge run-edge-hardening-to-playtest-planning: run-node-hardening-and-ship -follows-> run-node-playtest-phase-planning
+- edge run-edge-korean-localization-to-redeploy: run-node-korean-localization-pass -follows-> run-node-korean-redeploy
 - edge run-edge-korean-planning-to-localization-pass: run-node-korean-localization-planning -follows-> run-node-korean-localization-pass
 - edge run-edge-onboarding-to-feedback-plan: run-node-onboarding-feedback-pass -follows-> run-node-feedback-plan
 - edge run-edge-playtest-complete-to-korean-planning: run-node-playtest-deploy-blocker -follows-> run-node-korean-localization-planning
