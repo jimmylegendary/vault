@@ -1,26 +1,26 @@
 # AgeCraft
 
 - Project ID: agecraft-mobile
-- Project objective: 현재 AgeCraft 3-era MVP prototype를 외부 플레이테스트 가능한 pre-alpha로 발전시키고 재미/경제/진행 가설을 검증한다
-- Project status: done
+- Project objective: 현재 AgeCraft pre-alpha를 Korean-first playtest build로 한글화하고 다시 배포한다
+- Project status: active
 - Root task group: tg-root
-- Active snapshot: snapshot-root-v4
+- Active snapshot: snapshot-root-v5
 - Task groups: 1
-- Task group versions: 4
-- Tasks: 12
-- Snapshots: 4
-- Run nodes: 11
-- Run edges: 10
+- Task group versions: 5
+- Tasks: 14
+- Snapshots: 5
+- Run nodes: 13
+- Run edges: 12
 
 ## Task status counts
-- pending: 0
-- active: 0
+- pending: 1
+- active: 1
 - done: 12
 - blocked: 0
 - cancelled: 0
 
 ## Task groups
-- tg-root — objective: 현재 AgeCraft 3-era MVP prototype를 외부 플레이테스트 가능한 pre-alpha로 발전시키고 재미/경제/진행 가설을 검증한다
+- tg-root — objective: 현재 AgeCraft pre-alpha를 Korean-first playtest build로 한글화하고 다시 배포한다
   - version tgv-root-v1: 초기 루트 분해
   - version tgv-root-v2: 2D 모바일 MVP를 위한 1차 구조 분해
     - task task-core-loop-era-progression [done]: 핵심 플레이 루프와 시대 진화 구조 정의
@@ -32,14 +32,17 @@
     - task task-implement-crafting-economy-systems [done]: 조합 생성기와 경제 시스템 구현
     - task task-balance-and-content-pass [done]: 3개 시대 콘텐츠와 밸런스 패스 진행
     - task task-mvp-hardening-and-ship-readiness [done]: MVP 검증, 하드닝, 출시 준비
-  - version tgv-root-v4 [selected]: 외부 플레이테스트 준비 pre-alpha objective
+  - version tgv-root-v4: 외부 플레이테스트 준비 pre-alpha objective
     - task task-tune-core-fun-and-pacing [done]: 핵심 재미 루프와 pacing 튜닝
     - task task-improve-mobile-onboarding-and-feedback [done]: 모바일 onboarding과 feedback 강화
     - task task-ship-shareable-playtest-build [done]: 공유 가능한 web playtest build 배포
     - task task-capture-feedback-and-next-iteration-plan [done]: 피드백 수집 구조와 다음 iteration plan 정의
+  - version tgv-root-v5 [selected]: 한글화 및 재배포 objective
+    - task task-localize-player-facing-copy-ko [active]: 플레이어 노출 문구 한글화
+    - task task-redeploy-korean-playtest-build [pending]: 한글화 빌드 재배포 및 공유 상태 갱신
 
 ## Selected version
-- tg-root -> tgv-root-v4
+- tg-root -> tgv-root-v5
 
 ## Run nodes
 - node run-node-client-implementation [done] type=implementation sourceTask=task-build-playable-client
@@ -50,6 +53,8 @@
 - node run-node-fun-pacing-pass [done] type=implementation sourceTask=task-tune-core-fun-and-pacing
 - node run-node-hardening-and-ship [done] type=implementation sourceTask=task-mvp-hardening-and-ship-readiness
 - node run-node-initial-structuring [done] type=planning
+- node run-node-korean-localization-pass [active] type=implementation sourceTask=task-localize-player-facing-copy-ko
+- node run-node-korean-localization-planning [done] type=planning
 - node run-node-onboarding-feedback-pass [done] type=implementation sourceTask=task-improve-mobile-onboarding-and-feedback
 - node run-node-playtest-deploy-blocker [done] type=planning sourceTask=task-ship-shareable-playtest-build
 - node run-node-playtest-phase-planning [done] type=planning
@@ -62,6 +67,8 @@
 - edge run-edge-feedback-plan-to-deploy-blocker: run-node-feedback-plan -blocks-> run-node-playtest-deploy-blocker
 - edge run-edge-fun-pacing-to-onboarding-feedback: run-node-fun-pacing-pass -follows-> run-node-onboarding-feedback-pass
 - edge run-edge-hardening-to-playtest-planning: run-node-hardening-and-ship -follows-> run-node-playtest-phase-planning
+- edge run-edge-korean-planning-to-localization-pass: run-node-korean-localization-planning -follows-> run-node-korean-localization-pass
 - edge run-edge-onboarding-to-feedback-plan: run-node-onboarding-feedback-pass -follows-> run-node-feedback-plan
+- edge run-edge-playtest-complete-to-korean-planning: run-node-playtest-deploy-blocker -follows-> run-node-korean-localization-planning
 - edge run-edge-playtest-planning-to-fun-pacing: run-node-playtest-phase-planning -follows-> run-node-fun-pacing-pass
 - edge run-edge-structuring-to-design: run-node-initial-structuring -follows-> run-node-design-pass
