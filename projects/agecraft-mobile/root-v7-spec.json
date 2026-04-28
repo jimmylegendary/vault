@@ -1,0 +1,24 @@
+{
+  "versionId": "tgv-root-v7",
+  "version": "v7",
+  "summary": "interaction feedback 강화 objective",
+  "selected": true,
+  "tasks": [
+    {
+      "id": "task-add-interaction-feedback-effects",
+      "title": "interaction feedback 효과 추가",
+      "objective": "버튼/선택/제작/구매 입력 시 사용자가 즉시 눌렸다는 확신을 느끼도록 시각적/촉각적 피드백을 강화한다.",
+      "responsibility": "입력 반응 UX 강화",
+      "completionCriteria": "핵심 interaction마다 즉시 보이는 반응 효과가 생기고 실제 플레이에서 입력 인지가 쉬워진다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-reverify-redeploy-feedback-effects",
+      "title": "feedback 효과 재검증 및 재배포",
+      "objective": "추가된 반응 효과를 로컬/라이브에서 검증하고 build를 다시 배포한다.",
+      "responsibility": "검증, 배포, 기록 갱신",
+      "completionCriteria": "로컬과 라이브에서 interaction feedback이 확인되고 GitHub/Vercel/vault가 최신화된다.",
+      "status": "pending"
+    }
+  ]
+}
