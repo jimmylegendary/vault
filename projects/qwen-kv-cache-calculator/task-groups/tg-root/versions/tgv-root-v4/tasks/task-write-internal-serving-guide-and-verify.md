@@ -10,6 +10,9 @@ responsibility: guide/documentation과 실행 검증 정리
 completionCriteria: README 또는 별도 guide에 내부 배포 절차가 정리되고 로컬 검증까지 끝난다.
 order: 2
 createdAt: 2026-04-28T04:12:18.000Z
-status: pending
+status: done
 ---
 # 사내 serving 가이드 작성 및 검증
+
+- `SELF_HOSTING.md`를 추가하고 README에 compose self-hosting 경로를 연결했다.
+- healthz / title check까지 포함한 로컬 검증을 마쳤다.

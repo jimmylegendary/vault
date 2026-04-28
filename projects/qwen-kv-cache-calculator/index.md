@@ -8,6 +8,6 @@ language: ko
 activeRootTaskGroupId: tg-root
 activeSnapshotId: snapshot-root-v4
 createdAt: 2026-04-28T03:08:17.915Z
-status: active
+status: done
 ---
 # Qwen KV Cache Calculator
