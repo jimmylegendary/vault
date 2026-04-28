@@ -8,6 +8,5 @@ summary: 모바일 interaction blocker 수정 objective
 createdAt: 2026-04-28T02:25:58.542Z
 status: active
 supersedesVersionId: tgv-root-v5
-selected: true
 ---
 # 모바일 interaction blocker 수정 objective
