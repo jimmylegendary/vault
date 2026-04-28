@@ -10,6 +10,9 @@ responsibility: 계산기 UI와 계산 로직 구현
 completionCriteria: 사용자가 레이어 수, KV heads, head dim, dtype bytes, sequence length, batch size 등을 조절해 결과를 실시간으로 볼 수 있다.
 order: 2
 createdAt: 2026-04-28T03:09:14.120Z
-status: pending
+status: done
 ---
 # 실시간 KV cache 계산 웹페이지 구현
+
+- Static Korean-first calculator page implemented in `/home/jimmy/.openclaw/workspace/projects/qwen-kv-cache-calculator-app`.
+- Live input recalculation verified with a browser harness.
