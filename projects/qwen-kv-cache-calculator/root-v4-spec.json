@@ -1,0 +1,24 @@
+{
+  "versionId": "tgv-root-v4",
+  "version": "v4",
+  "summary": "docker compose self-hosting extension objective",
+  "selected": true,
+  "tasks": [
+    {
+      "id": "task-add-docker-compose-self-hosting",
+      "title": "docker compose self-hosting 구성 추가",
+      "objective": "사내에서 바로 받아 띄울 수 있도록 정적 계산기 repo에 docker compose 기반 self-hosting 구성을 추가한다.",
+      "responsibility": "container packaging과 runtime 구성 제공",
+      "completionCriteria": "Dockerfile, compose, web server config가 정리되고 실제로 올라가는지 검증된다.",
+      "status": "pending"
+    },
+    {
+      "id": "task-write-internal-serving-guide-and-verify",
+      "title": "사내 serving 가이드 작성 및 검증",
+      "objective": "운영자가 clone 후 compose로 띄우는 절차와 주의사항을 문서화하고 검증 결과를 남긴다.",
+      "responsibility": "guide/documentation과 실행 검증 정리",
+      "completionCriteria": "README 또는 별도 guide에 내부 배포 절차가 정리되고 로컬 검증까지 끝난다.",
+      "status": "pending"
+    }
+  ]
+}
