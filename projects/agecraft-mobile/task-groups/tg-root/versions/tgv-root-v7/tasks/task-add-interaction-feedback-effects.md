@@ -10,8 +10,10 @@ responsibility: 입력 반응 UX 강화
 completionCriteria: 핵심 interaction마다 즉시 보이는 반응 효과가 생기고 실제 플레이에서 입력 인지가 쉬워진다.
 order: 1
 createdAt: 2026-04-28T02:56:05.271Z
-status: active
+status: done
 ---
 # interaction feedback 효과 추가
 
-- Current focus for the new feedback-effects pass.
+- 버튼 누름 반응, 짧은 토스트, 모바일 진동 힌트를 추가했다.
+- local Playwright로 immediate feedback 동작을 확인했다.
+- `npm run smoke`와 `npm run build`를 통과했다.
