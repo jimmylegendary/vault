@@ -1,0 +1,16 @@
+{
+  "versionId": "tgv-root-v2",
+  "version": "v2",
+  "summary": "Docker stack service add/remove runbook",
+  "selected": true,
+  "tasks": [
+    {
+      "id": "task-document-safe-deploy-path",
+      "title": "A/C 무중단 기준 안전한 deploy 경로 문서화",
+      "objective": "stack deploy에서 D 추가와 B 제거를 어떤 옵션 조합으로 처리할지 명확히 정리한다.",
+      "responsibility": "명령 경로와 운영 주의사항 정리",
+      "completionCriteria": "non-prune / prune 차이와 검증 절차가 문서로 정리된다.",
+      "status": "pending"
+    }
+  ]
+}
